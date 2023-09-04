@@ -16,7 +16,24 @@ include_once(G5_THEME_PATH.'/head.php');
 ?>
 
 <div id="main" class="contents_wrap">
-  <h2 style="padding: 100px 0; background: #f4f4f4;">MAIN PAGE</h2>
+  <div id="main-visual" class="main_sec">
+    <div class="container">
+      <div class="main-visual-sl">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide1">
+            <div class="main-visual-ct">
+              <p class="main-visual-txt">Innovative Small Modular Reactor <br/>Development Agency</p>
+            </div>
+          </div>
+          <div class="swiper-slide slide2">
+            <div class="main-visual-ct">
+              <p class="main-visual-txt">Innovative Small Modular Reactor <br/>Development Agency</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <?php

@@ -30,37 +30,60 @@ if(defined('_INDEX_')) { // index에서만 실행
 
 <!-- 헤더 시작 { -->
 <div id="header">
-  <h1 id="hd_logo">
-    <a href="/">LOGO</a>
-  </h1>
+  <div class="container">
+    <div class="cf inner">
+      <h1 id="hd_logo">
+        <a href="/">
+          <img src="/source/img/logo.png" alt="">
+        </a>
+      </h1>
 
-  <nav id="hd_gnb">
-    <ul class="depth1">
+      <nav id="hd_gnb">
+        <ul class="depth1">
+          <?php foreach ($sb_menus as $menu) { ?>
+          <li>
+            <a href="<?php echo $menu['link'];?>"><?php echo $menu['name'];?></a>
+          </li>
+          <?php } ?>
+        </ul>
+      </nav>
+
+      <div id="hd_util">
+        <ul>
+          <li>
+            <a href="" id="hd-lang" class="hd_util-btn">Lang</a>
+          </li>
+          <li>
+            <a href="" id="hd-inquiry" class="hd_util-btn">Inquiry</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="sub_nav-dim"></div>
+
+  <div id="sub_nav">
+    <div class="inner">
       <?php foreach ($sb_menus as $menu) { ?>
-      <li>
-        <a href="<?php echo $menu['link'];?>"><?php echo $menu['name'];?></a>
+      <div class="sub_nav-depth1">
+        <p class="depth1-name"><?php echo $menu['name'];?></p>
         <?php if ( isset($menu['sb_2menus']) ) { ?>
-        <ul class="depth2">
+        <ul class="sub_nav-depth2">
           <?php foreach ($menu['sb_2menus'] as $menu2) { ?>
           <li>
-            <a href="<?php echo $menu2['link'];?>"><?php echo $menu2['name'];?></a>
-            <?php if ( isset($menu2['sb_3menus']) ) { ?>
-            <ul class="depth3">
-              <?php foreach ($menu2['sb_3menus'] as $menu3) { ?>
-              <li>
-                <a href="<?php echo $menu3['link'];?>"><?php echo $menu3['name'];?></a>
-              </li>
-              <?php } ?>
-            </ul>
-            <?php } ?>
+            <a href="<?php echo $menu2['link'];?>" class="depth2-name">
+              <span class="text"><?php echo $menu2['name'];?></span>
+            </a>
           </li>
           <?php } ?>
         </ul>
         <?php } ?>
-      </li>
+      </div>
       <?php } ?>
-    </ul>
-  </nav>
+    </div>
+  </div>
+
 </div>
 <!-- } 헤더 끝 -->
 

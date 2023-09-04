@@ -3,63 +3,127 @@ include_once('./_common.php');
 
 $sb_menus = [
   [
-    'id' => 'introduce',
-    'name' => '회사소개',
-    'link' => '/sub/test',
+    'id' => 'business',
+    'name' => '사업안내',
+    'link' => '',
     'sb_2menus' => [
       [
-        'id' => 'aboutus',
-        'name' => '회사소개',
-        'link' => '/sub/test',
-        'sb_3menus' => [
-          [
-            'id' => 'vision',
-            'name' => '비전',
-            'link' => '/sub/test'
-          ],
-          [
-            'id' => 'organization',
-            'name' => '조직도',
-            'link' => '/sub/test'
-          ]
-        ]
+        'id' => 'overview',
+        'name' => '사업개요',
+        'link' => ''
       ],
       [
-        'id' => 'greeting',
-        'name' => 'CEO인사말',
-        'link' => '/sub/test'
-      ],
-      [
-        'id' => 'location',
-        'name' => '오시는 길',
-        'link' => '/sub/test'
+        'id' => 'system',
+        'name' => '사업추진체계',
+        'link' => ''
       ]
     ]
   ],
   [
-    'id' => 'cs',
-    'name' => '고객지원',
-    'link' => '/qa',
+    'id' => '',
+    'name' => '사업단 소개',
+    'link' => '',
     'sb_2menus' => [
       [
-        'id' => 'qa',
-        'name' => '문의하기',
-        'link' => '/qa/write'
+        'id' => '',
+        'name' => '인사말',
+        'link' => ''
       ],
       [
-        'id' => 'gallery',
-        'name' => '갤러리',
-        'link' => '/gallery'
+        'id' => '',
+        'name' => '설립목적',
+        'link' => ''
       ],
       [
-        'id' => 'notice',
+        'id' => '',
+        'name' => '조직도',
+        'link' => ''
+      ],
+      [
+        'id' => '',
+        'name' => 'CI소개',
+        'link' => ''
+      ],
+      [
+        'id' => '',
+        'name' => '오시는 길',
+        'link' => ''
+      ]
+    ]
+  ],
+  [
+    'id' => 'ismr',
+    'name' => 'i-SMR',
+    'link' => '',
+    'sb_2menus' => [
+      [
+        'id' => 'smr',
+        'name' => 'SMR',
+        'link' => ''
+      ],
+      [
+        'id' => 'innovation',
+        'name' => 'Innovation',
+        'link' => ''
+      ],
+      [
+        'id' => 'safety',
+        'name' => 'Safety',
+        'link' => ''
+      ],
+      [
+        'id' => 'decarbonization',
+        'name' => 'Decarbonization',
+        'link' => ''
+      ]
+    ]
+  ],
+  [
+    'id' => '',
+    'name' => '커뮤니티',
+    'link' => '',
+    'sb_2menus' => [
+      [
+        'id' => '',
         'name' => '공지사항',
-        'link' => '/notice'
+        'link' => ''
       ],
       [
-        'id' => 'faq',
-        'name' => '자주묻는질문',
-        'link' => '/faq'
+        'id' => '',
+        'name' => 'FAQ',
+        'link' => ''
+      ],
+      [
+        'id' => '',
+        'name' => '자료실',
+        'link' => ''
+      ],
+      [
+        'id' => '',
+        'name' => '문의하기',
+        'link' => ''
+      ]
+    ]
+  ],
+  [
+    'id' => '',
+    'name' => '미디어룸',
+    'link' => '',
+    'sb_2menus' => [
+      [
+        'id' => '',
+        'name' => '사업단 소식',
+        'link' => ''
+      ],
+      [
+        'id' => '',
+        'name' => 'i-SMR 보도자료',
+        'link' => ''
+      ],
+      [
+        'id' => '',
+        'name' => 'SMR 뉴스레터',
+        'link' => ''
       ]
     ]
   ]
