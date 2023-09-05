@@ -26,7 +26,7 @@
 #sub_nav .depth2-name .text:after {content: ""; display: block; position: absolute; top: 50%; right: -20px; z-index: 1; width: 18px; height: 18px; margin-top: -9px; background: url('/source/img/round-arrow-left.png') no-repeat center/contain; opacity: 0; transition: 0.3s;}
 
 #sub_nav .sub_nav-depth1:hover {background: #076bfd;}
-#sub_nav .sub_nav-depth1:hover:after {content: ""; display: block; position: absolute; bottom: 0; right: 0; z-index: 1; width: 283px; height: 205px; background: url('/source/img/sub-nav-bg.png') no-repeat center/contain;}
+#sub_nav .sub_nav-depth1:hover:after {content: ""; display: block; position: absolute; bottom: 0; right: 0; z-index: 1; width: 283px; height: 205px; background: url('/source/img/sub-nav-bg.png') no-repeat center/contain; opacity: 0.3;}
 #sub_nav .sub_nav-depth1:hover .depth1-name {color: #fff;}
 #sub_nav .sub_nav-depth1:hover .depth1-name:before {background: #fff;}
 #sub_nav .sub_nav-depth1:hover .depth2-name .text {color: #fff;}
